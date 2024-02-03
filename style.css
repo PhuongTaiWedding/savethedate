@@ -2801,3 +2801,121 @@ html, body  {
       position: relative;
     }
   }
+
+
+/* Page Loader */
+  #preloader{
+    /* height: 100%; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100000;
+    background-color: #ffff;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .beatingHeart{
+    width:50px;
+    margin:50px auto;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top:20%;
+  }
+
+  .beatingHeart .heart {
+      position: absolute;
+      width: 50px;
+      height: 45px;
+      opacity: 0.6;
+      -webkit-animation: beat 3.0s         infinite ease-in-out;
+  }
+  .heart:before , .heart:after {
+    background: #11235A;
+  }
+  .heart:before , .heart:after {
+      position: absolute;
+      content: "";
+      left: 25px;
+      top: 0;
+      width: 25px;
+      height: 40px;
+      background: #11235A;
+      -moz-border-radius: 50px 50px 0 0;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+  }
+
+  .fushiaHeart:before , .fushiaHeart:after
+  {
+    background: #11235A;
+  }
+  .pinkHeart:before , .pinkHeart:after{
+    background: #11235A;
+  }
+
+  .heart:after{
+      left: 0;
+      -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+          -o-transform-origin: 100% 100%;
+              transform-origin :100% 100%;
+  }
+
+  .beatingHeart .heart2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  .beatingHeart .heart3 {
+    -webkit-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+  }
+
+  .beatingHeart .heart4 {
+    -webkit-animation-delay: -2.0s;
+    animation-delay: -2.0s;
+  }
+
+  .beatingHeart .heart5 {
+    -webkit-animation-delay: -2.5s;
+    animation-delay: -2.5s;
+  }
+
+  @-webkit-keyframes beat {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+
+  .loader-text{
+    color: #11235A;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display:flex;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width:768px) {
+    .beatingHeart{
+      padding-top:50%;
+    }
+  }

@@ -453,3 +453,10 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+// Page Loader
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
