@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tai-Phuong Wedding</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS file -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" />
+  <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel='stylesheet' >
+</head>
+
+<body>
+  <!-- <div class="parrallax-container">
+    
+  </div> -->
+  <div class="parallax-image2"></div>
+  <section id ="home" class = "background_1">
+    <nav class = "top-nav-bar">
+      <!-- <a href="#home" class = "logo" ><i class='bx bxs-home-heart'></i></a> -->
+      <a href="#home" class = "logo" ><p>Phương <i class='bx bxs-heart bx-tada' style='color:#ffffff' ></i> Tài</p></a>
+      <ul class="topnav">
+        <!-- <li><a class = "active" href="#home">Home</a></li> -->
+        <li><a href="#invitation_page">Thiệp mời</a></li>
+        <li><a href="#timeline-head"><i class='bx bxs-heart ' style='color:#ffffff' ></i>Chuyện chúng mình</a></li>
+        <li><a href="#ourstory"><i class='bx bxs-heart' style='color:#ffffff' ></i>Album</a></li>
+        <li><a href="#rsvp"><i class='bx bxs-heart' style='color:#ffffff' ></i>Phản hồi</a></li>
+        <li><a href="#registry"><i class='bx bxs-heart' style='color:#ffffff' ></i>Tặng quà</a></li>
+        <!-- <li><a href="#thankyou"><i class='bx bxs-heart' style='color:#ffffff' ></i>Chụp ảnh</a></li> -->
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </nav>
+    <div class="OpenPage">
+      <h1>
+        <div class = "open_text_container_1">
+          <p id="text_1">The Wedding Celebration Of</p>
+        </div>
+        <div class = "open_text_container_2">
+          <p id="text_2">Phuong & Tai</p>
+        </div>
+        <!-- <span>ANH TAI & HA PHUONG </span> <br> -->
+        <!--<span>ARE GETTING MARRIED</span><br>-->
+      </h1>
+    </div>
+    <div class="overlay"></div>
+  </section>
+  
+  <section id="invitation_page" class="invitation-page">
+    <!-- Invitation content goes here -->
+    <div class="invitation-gallery">
+        <div class="column1">
+          <div class="invitation">
+            <img src="invitation_1.png" alt="Invitation 1">
+          </div>
+        </div>
+        <div class="column2">
+          <div class="invitation">
+            <img src="invitation_2.png" alt="Invitation 2">
+          </div>
+        </div>
+        <div class="column3">
+          <div class="invitation">
+            <img src="invitation_3.png" alt="Invitation 3">
+          </div>
+        </div>
+        <div class="column4">
+          <div class="invitation">
+            <img src="invitation_4.png" alt="Invitation 4">
+          </div>
+        </div>
+    </div>
+    <div class="footer-flower">
+      <div class="flower">
+        <img src="flower_0.png" alt="footer-flower">
+      </div>
+    </div>
+  </section>
+
+  <section id="groom_bride_page" class="groom-bride-page">
+    <!-- groom and bride passport photo content goes here -->
+    <div class="groom-bride-gallery">
+        <div class="column_gb">
+          <div class = "groom-bride">
+            <img src="Frame_Tai.jpg" alt="groom">
+          </div>
+        </div>
+        <div class="column_gb">
+          <div class = "groom-bride-text">
+            <img src="Tai-Phuong_Text.jpg" alt="groom-bride text">
+          </div>
+        </div>
+        <div class="column_gb">
+          <div class = "groom-bride">
+            <img src="Frame_Be.jpg" alt="bride">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- <section class="timeline">
+    <div class="container">
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content js--fadeInLeft">
+          <h2>Title</h2>
+          <div class="date">1 MAY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div> 
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            <h2>Card Title</h2>
+          </div>
+          <div class="date">25 MAY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+  
+      </div>   
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content js--fadeInLeft">
+          <div class="date">3 JUN 2016</div>
+          <h2>Quote</h2>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content js--fadeInRight">
+          <h2>Title</h2>
+          <div class="date">22 JUN 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header">
+            <h2>Card Title</h2>
+          </div>
+          <div class="date">10 JULY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            <h2>Card Title</h2>
+          </div>
+          <div class="date">30 JULY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>  
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content js--fadeInLeft">
+          <div class="date">5 AUG 2016</div>
+          <h2>Quote</h2>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            <h2>Card Title</h2>
+          </div>
+          <div class="date">19 AUG 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>  
+  
+      <div class="timeline-item">
+  
+        <div class="timeline-img"></div>
+  
+        <div class="timeline-content js--fadeInLeft">
+          <div class="date">1 SEP 2016</div>
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+    </div>
+  </section> -->
+  
+  <div class="timeline-head" id="timeline-head">Chuyện chúng mình</div>
+  <!-- <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2014</h2>
+        <p>First met.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2016</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>2015</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2012</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>2011</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2007</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+  </div> -->
+  <section class="timeline-ourstory" id="timeline-ourstory">
+    <div class='timeline'>
+      <div class="container left-container">
+        <img src="flower-bouquet.png" alt="">
+        <div class="text-box">
+          <h2>Gặp gỡ</h2>
+          <small>2013</small>
+          <p>Lần đầu gặp nhau tại Quốc Học</p>
+        </div>
+      </div>
+      <div class="container right-container">
+        <div class="timeline-dot"><img src="distance.png" alt=""></div>
+        <div class="text-box">
+          <h2>Học Đại học - Yêu xa </h2>
+          <small>2014-2020</small>
+          <p>Hồ Chí Minh - Đà Lạt</p>
+          <p>300km</p>
+        </div>
+      </div>
+      <div class="container left-container">
+        <img src="location.png" alt="">
+        <div class="text-box">
+          <h2>Ở cùng thành phố</h2>
+          <small>2020</small>
+          <p>Lần đầu ở cùng thành phố sau 6 năm</p>
+        </div>
+      </div>
+      <div class="container right-container">
+        <img src="cat.png" alt="">
+        <div class="text-box">
+          <h2>Bé Sò</h2>
+          <small>06/2022</small>
+          <p>Cùng nhận nuôi bé Sò</p>
+        </div>
+      </div>
+      <div class="container left-container">
+        <img src="wedding-rings.png" alt="">
+        <div class="text-box">
+          <h2>Quyết định lớn</h2>
+          <small>2023</small>
+          <p>Phương và Tài quyết định về chung một nhà</p>
+        </div>
+      </div>
+      <div class="container right-container">
+        <img src="wedding-couple.png" alt="">
+        <div class="text-box">
+          <h2>Ngày cưới của Phương và Tài</h2>
+          <small>13/02/2024</small>
+          <p>Save the date</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="ourstory">
+    <!-- About Us content goes here -->
+    <div class="ourstory-head">Album ảnh</div>
+    <div class="story-slider">
+      <div class="story-list">
+        <div class="story-item active">
+          <img src="Gallery-2.jpg" alt="anh1">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2014</h2>
+            <p>Write somthing for 2014</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-3.jpg" alt="anh2">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2015</h2>
+            <p>Write somthing for 2015</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-4.jpg" alt="anh3">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2016</h2>
+            <p>Write somthing for 2016</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-5.jpg" alt="anh4">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2017</h2>
+            <p>Write somthing for 2017</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-9.jpg" alt="anh4">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2017</h2>
+            <p>Write somthing for 2017</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-10.jpg" alt="anh4">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2017</h2>
+            <p>Write somthing for 2017</p> -->
+          </div>
+        </div>
+        <div class="story-item">
+          <img src="Gallery-12.jpg" alt="anh4">
+          <div class="story-content">
+            <!-- <p>design</p>
+            <h2>2017</h2>
+            <p>Write somthing for 2017</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- button arrow -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- thumbnail arrow -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="Gallery-2.jpg" alt="anh1">
+          <div class="content">
+            <!-- 2014 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-3.jpg" alt="anh2">
+          <div class="content">
+            <!-- 2015 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-4.jpg" alt="anh3">
+          <div class="content">
+            <!-- 2016 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-5.jpg" alt="anh4">
+          <div class="content">
+            <!-- 2017 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-9.jpg" alt="anh4">
+          <div class="content">
+            <!-- 2017 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-10.jpg" alt="anh4">
+          <div class="content">
+            <!-- 2017 -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="Gallery-12.jpg" alt="anh4">
+          <div class="content">
+            <!-- 2017 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="parallax-container">
+
+    <div class="parallax-image1"></div>
+    
+    <div id="rsvp">
+      <!-- RSVP content goes here -->
+      <!-- <div class="parallax-image1 sticky"></div> -->
+      <div class="rsvp-overlay"></div>
+      <div class="rsvp-container">
+        <div class="form-title-container">
+          <h1 class="form-title">Rất mong được gặp bạn!</h1>
+          <p class="form-text">Bạn vui lòng đăng ký để chúng mình có thể chuẩn bị đón tiếp tốt nhất.</p>
+        </div>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbz13VRt_RkXkei2BdNZ19Rbkg8KlzcCu9Jobd2W3ClNyKJ252JBSaC-OpUnhfLkAPvH/exec" class="register-form" name="register-form">
+          <div>
+            <div class="main-user-info">
+              <!-- <label for="fullname">Tên đầy đủ</label> -->
+              <input type="text" name="fullname" id="fullname" placeholder="Tên đầy đủ của bạn"/>
+            </div>
+            <div class="relationship">
+              <!-- <label for="relationship_with_family">Bạn của</label> -->
+              <select name="relationship_with_family" id="relationship_with_family">
+                <option value="null">Bạn của</option>
+                <option value="bride">Cô dâu</option>
+                <option value="groom">Chú rể</option>
+                <option value="bridefamily">Ba mẹ cô dâu</option>
+                <option value="groomfamily">Ba mẹ chú rể</option>
+              </select>
+            </div>
+            <div class="guest">
+              <!-- <label for="number_of_guest">Số lượng tham dự</label> -->
+              <select name="number_of_guest" id="number_of_guest" >
+                <option value="0">Số lượng tham dự</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+                <option value="4">6</option>
+                <option value="4">7</option>            
+              </select>
+            </div>
+            <div class="food-detail-box">
+              <span class="food-title">Bạn dùng tiệc chay hay tiệc mặn?</span>
+              <div class="food-category">
+                <input type="radio" name="food" id="chay" value="chay"/>
+                <label for="chay">Tiệc chay</label>
+                <input type="radio" name="food" id="man" value="man"/>
+                <label for="man">Tiệc mặn</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Đăng ký">
+          </div>
+        </form>
+      </div>
+      <div class="footer-flower-2">
+        <div class="flower-2">
+          <img src="flower_0.png" alt="footer-flower">
+        </div>
+      </div>
+    </div>
+  
+
+    <section id="registry">
+      <!-- Registry content goes here -->
+      <div class="registry-head">Tặng quà</div>
+      <div class="registry-container">
+        <div class="registry-text-panel">
+          <!-- <p>Your presence on our wedding day is the most important gift you could ever give us.</p> -->
+          <p>Rất mong được gặp bạn trong ngày vui của chúng mình.</p>
+          <!-- <p>However, if you would like to buy us something - please check out our registry.</p> -->
+          <p>Bạn có thể tặng quà cho chúng mình bằng hộp quà nhỏ ở dưới nhé <i class='bx bx-gift bx-tada' ></i></p>
+        </div>
+        <div class="registry-img-panel">
+          <div class = "gift-logo" ><i class='bx bx-gift bx-tada'></i></div>
+        </div>
+        <div class="bank-account-popup">
+          <p class="bank-account-popup-text">Đây là số tài khoản của chúng mình</p>
+          <div class="bx bx-x" id="close-icon"></div>
+          <div class="bank-accoun-container">
+            <div class="account-groom">
+              <img class="account-qr-VCB" src="VCB-Tai.jpeg" alt="VCB-Tai">
+              <div class="account-text">
+                <p class="account-qr-VCB-groom">0381000433877</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-1">Copy</div>
+              </div>
+              <img class="account-qr-Momo" src="Momo-Tai.jpeg" alt="Momo-Tai">
+              <div class="account-text">
+                <p class="account-qr-Momo-groom">0906586545</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-2">Copy</div>
+              </div>
+            </div>
+            <div class="account-bride">
+              <img class="account-qr-VCB" src="VCB-Be.jpg" alt="VCB-Tai">
+              <div class="account-text">
+                <p class="account-qr-VCB-bride">0161001629758</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-3">Copy</div>
+              </div>
+              <img class="account-qr-Momo" src="Momo-Be.jpg" alt="Momo-Tai">
+              <div class="account-text">
+                <p class="account-qr-Momo-bride">0935268083</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-4">Copy</div>
+              </div>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="thankyou">
+    <!-- Gallery content goes here -->
+    <!-- <img src="images_6.jpg" alt="anh6"> -->
+    <div class="thankyoutext1"> <p>Cám ơn rất nhiều</p></div>
+    <div class="thankimage"><img src="Gallery-13.jpg" alt=""></div>
+    <div class="thankyoutext2"> <p>Hà Phương - Anh Tài</p></div>
+  </section>
+
+  <!-- <section id="contact"> -->
+    <!-- Contact content goes here -->
+    <!-- <img src="images_1.jpg" alt="anh1"> -->
+  <!-- </section> -->
+  <!-- <section id="gallery" class="gallery">
+    Gallery content goes here
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <img class="gallery-image" src="Gallery-1.jpg" alt="gal1" draggable="false">
+      <img class="gallery-image" src="Gallery-2.jpg" alt="gal2" draggable="false">
+      <img class="gallery-image" src="Gallery-3.jpg" alt="gal3" draggable="false">
+      <img class="gallery-image" src="Gallery-4.jpg" alt="gal4" draggable="false">
+      <img class="gallery-image" src="Gallery-5.jpg" alt="gal5" draggable="false">
+      <img class="gallery-image" src="Gallery-6.jpg" alt="gal6" draggable="false">
+      <img class="gallery-image" src="Gallery-7.jpg" alt="gal7" draggable="false">
+      <img class="gallery-image" src="Gallery-8.jpg" alt="gal8" draggable="false">
+      <img class="gallery-image" src="Gallery-9.jpg" alt="gal9" draggable="false">
+      <img class="gallery-image" src="Gallery-10.jpg" alt="gal10" draggable="false">
+      <img class="gallery-image" src="Gallery-11.jpg" alt="gal11" draggable="false">
+      <img class="gallery-image" src="Gallery-12.jpg" alt="gal12" draggable="false">
+    </div>
+  </section> -->
+  <!-- <footer>
+    <p>Bring your dancing shoe!!!</p>
+  </footer> -->
+
+  <script src="script.js"></script> <!-- Link to your custom JavaScript file -->
+</body>
+</html>
