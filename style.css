@@ -1430,7 +1430,7 @@ html, body  {
     gap: 20px;
     animation: fade-in linear;
     animation-timeline: view();
-    animation-range: 10% 100%;
+    animation-range: 0% 100%;
   }
 
   .column_gb{
