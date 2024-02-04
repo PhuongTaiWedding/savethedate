@@ -2728,6 +2728,7 @@ html, body  {
     }
     .text-box{
       font-size: 13px;
+      padding: 20px 15px;
     }
     .text-box small{
       margin-bottom: 10px;
