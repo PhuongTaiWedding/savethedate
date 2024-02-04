@@ -1429,8 +1429,8 @@ html, body  {
     display: flex;
     gap: 20px;
     animation: fade-in linear;
-    animation-timeline: view();
-    animation-range: 0% 100%;
+    /* animation-timeline: view();
+    animation-range: 0% 100%; */
   }
 
   .column_gb{
@@ -2980,4 +2980,38 @@ html, body  {
     .beatingHeart{
       padding-top:50%;
     }
+  }
+
+  /* .hidden{
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .show_scroll{
+    opacity: 1;
+  } */
+
+  /* .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  } */
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
   }

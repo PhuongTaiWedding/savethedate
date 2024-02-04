@@ -7,6 +7,7 @@ preload_image("Anh_bia_3.jpg");
 preload_image("Anh_bia_4.jpg");
 preload_image("Anh_bia_2.jpg");
 
+
 var link = $("nav ul li a");
 //click handler
 link.on("click" , function(){
@@ -468,4 +469,58 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display = "none";
-})
+});
+
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     console.log(entry)
+//     if(entry.isIntersecting){
+//       entry.target.classlist.add('show_scroll');
+//     } else {
+//       entry.target.classList.remove('show_scroll');
+//     }
+//   });
+// });
+
+// const hiddenElements = document.querySelectorAll('.hidden');
+// hiddenElements.forEach((el)=>observer.observe(el));
+
+
+// function FadeInSection(props) {
+//   const [isVisible, setVisible] = React.useState(true);
+//   const domRef = React.useRef();
+//   React.useEffect(() => {
+//     const observer = new IntersectionObserver(entries => {
+//       entries.forEach(entry => setVisible(entry.isIntersecting));
+//     });
+//     observer.observe(domRef.current);
+//     return () => observer.unobserve(domRef.current);
+//   }, []);
+//   return (
+//     <div
+//       className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+//       ref={domRef}
+//     >
+//       {props.children}
+//     </div>
+//   );
+// }
+
+window.addEventListener('scroll',reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++){
+    var windowHeight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 200;
+
+    if(revealtop < windowHeight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
