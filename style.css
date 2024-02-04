@@ -1431,7 +1431,6 @@ html, body  {
     animation: fade-in linear;
     animation-timeline: view();
     animation-range: 10% 100%;
-    opacity: 0;
   }
 
   .column_gb{
