@@ -2667,7 +2667,7 @@ html, body  {
     margin-left:-3px;
     z-index: 0;
     animation: moveline 1s linear forwards;
-    animation-timeline: view();
+    animation-timeline: view(10% 20%);
   }
 
   @keyframes moveline {
