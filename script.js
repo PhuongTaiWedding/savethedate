@@ -1,3 +1,12 @@
+function preload_image(im_url) {
+  let img = new Image();
+  img.src = im_url;
+}
+
+preload_image("Anh_bia_3.jpg");
+preload_image("Anh_bia_4.jpg");
+preload_image("Anh_bia_2.jpg");
+
 var link = $("nav ul li a");
 //click handler
 link.on("click" , function(){
@@ -36,7 +45,7 @@ function changeBackgroundImage() {
   currentImageIndex = (currentImageIndex + 1) % imageLibrary.length;
 }
 
-setInterval(changeBackgroundImage, 5000); // Change the image every 5 seconds
+setInterval(changeBackgroundImage, 3000); // Change the image every 5 seconds
 
 const textLibrary = [
   'We Decice To Live Happily Together',
@@ -81,7 +90,7 @@ function changeText_2() {
   
 }
 
-setInterval(changeText_2, 5000);
+setInterval(changeText_2, 3000);
 
 
 let menu = document.querySelector('#menu-icon');

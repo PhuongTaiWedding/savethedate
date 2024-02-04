@@ -1458,12 +1458,18 @@ html, body  {
     .groom-bride-text{
       width: 40%;
     }
+    .groom-bride-page{
+      padding-bottom: 50px;
+    }
+    .groom-bride{
+      width: 70%;
+    }
   }
 
   @keyframes fade-in{
     0% {scale: .8; opacity: 0; }
-    50% {scale: 1; opacity: 1; }
-    100% {scale: .8; opacity: 0; }
+    30% {scale: 1; opacity: 1; }
+    100% {scale: 1; opacity: 1; }
   }
 
   /* .logo i{
@@ -1668,6 +1674,8 @@ html, body  {
     position: relative;
     padding-bottom: 20%;
     padding-top: 10%;
+    animation: fade-in linear;
+    animation-timeline: view(10px 20px);
   }
 
   /* .sticky{
@@ -1986,6 +1994,8 @@ html, body  {
     padding-bottom: 25px;
     width: 80%;
     position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(10px 20px);
   }
 
   .story-slider{
@@ -2175,6 +2185,9 @@ html, body  {
     .thumbnail .item.active{
       height: 80px;
     }
+    .story-slider .story-list .story-item img{
+      object-fit: cover;
+    }
   }
 
   /* registry */
@@ -2236,6 +2249,8 @@ html, body  {
     padding-bottom: 25px;
     width: 80%;
     position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(10px 20px);
   }
 
   .gift-logo{
@@ -2485,6 +2500,15 @@ html, body  {
     #registry{
       margin-bottom: 0;
     }
+    .registry-head{
+      font-size: 50px;
+    }
+    #registry p{
+      font-size: 18px;
+    }
+    .registry-container{
+      width: 100%;
+    }
   }
 
   @keyframes fadein {
@@ -2515,6 +2539,9 @@ html, body  {
   padding-bottom: 5%;
   width: 100%;
   position: relative;
+  margin-top: -1px;
+  animation: fade-in linear;
+  animation-timeline: view(10px 20px);
   }
 
   .timeline{
@@ -2531,7 +2558,8 @@ html, body  {
     width: 39%;
     /* background: rgba(0, 0, 0, 0.3); */
     animation: movedown 1s linear forwards;
-    opacity: 0;   
+    opacity: 0;
+    /* animation-timeline: view(10px 20px); */
   }
 
   @keyframes movedown {
@@ -2613,10 +2641,10 @@ html, body  {
 
   .container::after {
     content: '';
+    background-color: rgb(255, 255, 255, 1);
     position: absolute;
     width: 45px;
     height: 45px;
-    /* background-color: #ffff; */
     border: 1px solid rgb(31, 37, 68);
     right: -19px;
     top: 30px;
@@ -2638,16 +2666,23 @@ html, body  {
     left: 52%;
     margin-left:-3px;
     z-index: 0;
-    animation: moveline 6s linear forwards;
+    animation: moveline 1s linear forwards;
+    animation-timeline: view();
   }
 
   @keyframes moveline {
     0%{
       height: 0;
     }
-    100%{
+    40%{
+      height: 30%;
+    }
+    70%{
       height: 100%;
     }
+    /* 90%{
+      height: 100%;
+    } */
   }
   .text-box h2{
     font-family: 'Alex Brush', sans-serif;
@@ -2694,6 +2729,10 @@ html, body  {
     }
     .text-box small{
       margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .text-box h2{
+      font-size: 23px;
     }
     .right-container{
       left: 20px;
@@ -2742,7 +2781,9 @@ html, body  {
   } */
 
   #thankyou{
+    position: relative;
     background-color: #EFECEC;
+    margin-top: -10px;
   }
 
   .thankyoutext1{
@@ -2754,10 +2795,13 @@ html, body  {
     letter-spacing: 0px;
     text-align: center;
     margin: auto;
+    /* z-index: 3; */
     padding-top: 50px;
     padding-bottom: 25px;
     width: 80%;
     position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(10px 20px);
   }
 
   .thankyoutext2{
@@ -2769,6 +2813,7 @@ html, body  {
     letter-spacing: 0px;
     text-align: center;
     margin: auto;
+    /* z-index: 3; */
     padding-top: 25px;
     padding-bottom: 25px;
     width: 80%;
@@ -2781,15 +2826,21 @@ html, body  {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(10px 20px);
   }
 
   .thankimage img{
     border-radius: 10%;
   }
 
+  .thankyoutext2 i{
+    font-size: 25px;
+  }
+
   @media screen and (max-width:768px) {
     #thankyou{
-      padding-top: 5%;
+      padding-top: 0%;
     }
     .thankimage{
       width: 80%;
@@ -2797,6 +2848,17 @@ html, body  {
       margin-left: auto;
       margin-right: auto;
       position: relative;
+    }
+    .thankyoutext1{
+      font-size: 50px;
+    }
+  
+    .thankyoutext2{
+      font-size: 30px;
+    }
+
+    .thankyoutext2 i{
+      font-size: 20px;
     }
   }
 
