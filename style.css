@@ -1430,6 +1430,8 @@ html, body  {
     gap: 20px;
     animation: fade-in linear;
     animation-timeline: view();
+    animation-range: 250px 2000px;
+    opacity: 0;
   }
 
   .column_gb{
@@ -2667,7 +2669,8 @@ html, body  {
     margin-left:-3px;
     z-index: 0;
     animation: moveline 1s linear forwards;
-    animation-timeline: view(10% 20%);
+    animation-timeline: view();
+    animation;
   }
 
   @keyframes moveline {
