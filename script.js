@@ -49,7 +49,7 @@ function changeBackgroundImage() {
 setInterval(changeBackgroundImage, 3000); // Change the image every 5 seconds
 
 const textLibrary = [
-  'We Decice To Live Happily Together',
+  'We Decide To Live Happily Together',
   'A Decade Of Love',
   'The Wedding Celebration Of'
 ];
