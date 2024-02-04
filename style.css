@@ -1675,8 +1675,8 @@ html, body  {
     position: relative;
     padding-bottom: 20%;
     padding-top: 10%;
-    animation: fade-in linear;
-    animation-timeline: view(10px 20px);
+    /* animation: fade-in linear;
+    animation-timeline: view(10px 20px); */
   }
 
   /* .sticky{
@@ -1995,8 +1995,8 @@ html, body  {
     padding-bottom: 25px;
     width: 80%;
     position: relative;
-    animation: fade-in linear;
-    animation-timeline: view(10px 20px);
+    /* animation: fade-in linear;
+    animation-timeline: view(10px 20px); */
   }
 
   .story-slider{
@@ -2250,8 +2250,8 @@ html, body  {
     padding-bottom: 25px;
     width: 80%;
     position: relative;
-    animation: fade-in linear;
-    animation-timeline: view(10px 20px);
+    /* animation: fade-in linear;
+    animation-timeline: view(10px 20px); */
   }
 
   .gift-logo{
@@ -2541,8 +2541,8 @@ html, body  {
   width: 100%;
   position: relative;
   margin-top: -1px;
-  animation: fade-in linear;
-  animation-timeline: view(10px 20px);
+  /* animation: fade-in linear;
+  animation-timeline: view(10px 20px); */
   }
 
   .timeline{
@@ -2802,8 +2802,8 @@ html, body  {
     padding-bottom: 25px;
     width: 80%;
     position: relative;
-    animation: fade-in linear;
-    animation-timeline: view(10px 20px);
+    /* animation: fade-in linear;
+    animation-timeline: view(10px 20px); */
   }
 
   .thankyoutext2{
@@ -2828,8 +2828,8 @@ html, body  {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    animation: fade-in linear;
-    animation-timeline: view(10px 20px);
+    /* animation: fade-in linear;
+    animation-timeline: view(10px 20px); */
   }
 
   .thankimage img{
@@ -3006,12 +3006,14 @@ html, body  {
 
   .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
     transition: all 1s ease;
+    scale: 0.8;
   }
 
   .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+    scale: 1;
   }
