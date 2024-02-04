@@ -2667,9 +2667,9 @@ html, body  {
     left: 52%;
     margin-left:-3px;
     z-index: 0;
-    animation: moveline 1s linear forwards;
+    /* animation: moveline 1s linear forwards;
     animation-timeline: view();
-    animation;
+    animation; */
   }
 
   @keyframes moveline {
@@ -3016,4 +3016,16 @@ html, body  {
     transform: translateY(0px);
     opacity: 1;
     scale: 1;
+  }
+
+  .reveal2{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .reveal2.active{
+    transform: translateY(0px);
+    opacity: 1;
   }

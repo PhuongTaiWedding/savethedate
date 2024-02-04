@@ -508,6 +508,7 @@ window.addEventListener("load", function(){
 // }
 
 window.addEventListener('scroll',reveal);
+window.addEventListener('scroll',reveal2);
 
 function reveal(){
   var reveals = document.querySelectorAll('.reveal');
@@ -521,6 +522,22 @@ function reveal(){
     }
     else{
       reveals[i].classList.remove('active');
+    }
+  }
+}
+
+function reveal2(){
+  var reveals2 = document.querySelectorAll('.reveal2');
+  for (var i = 0; i < reveals2.length; i++){
+    var windowHeight = window.innerHeight;
+    var revealtop2 = reveals2[i].getBoundingClientRect().top;
+    var revealpoint2 = 100;
+
+    if(revealtop2 < windowHeight - revealpoint2){
+      reveals2[i].classList.add('active');
+    }
+    else{
+      reveals2[i].classList.remove('active');
     }
   }
 }
