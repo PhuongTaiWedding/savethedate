@@ -6,21 +6,21 @@ function preload_image(im_url) {
 preload_image("Anh_bia_3.jpg");
 preload_image("Anh_bia_4.jpg");
 preload_image("Anh_bia_2.jpg");
-preload_image("Gallery-2.jpg");
-preload_image("Gallery-3.jpg");
-preload_image("Gallery-4.jpg");
-preload_image("Gallery-5.jpg");
-preload_image("Gallery-9.jpg");
-preload_image("Gallery-10.jpg");
-preload_image("Gallery-12.jpg");
-preload_image("Gallery-13.jpg");
-preload_image("Gallery-14.jpg");
-preload_image("Gallery-15.jpg");
-preload_image("Gallery-16.jpg");
-preload_image("Gallery-17.jpg");
-preload_image("Gallery-18.jpg");
-preload_image("Gallery-19.jpg");
-preload_image("Gallery-20.jpg");
+// preload_image("Gallery-2.jpg");
+// preload_image("Gallery-3.jpg");
+// preload_image("Gallery-4.jpg");
+// preload_image("Gallery-5.jpg");
+// preload_image("Gallery-9.jpg");
+// preload_image("Gallery-10.jpg");
+// preload_image("Gallery-12.jpg");
+// preload_image("Gallery-13.jpg");
+// preload_image("Gallery-14.jpg");
+// preload_image("Gallery-15.jpg");
+// preload_image("Gallery-16.jpg");
+// preload_image("Gallery-17.jpg");
+// preload_image("Gallery-18.jpg");
+// preload_image("Gallery-19.jpg");
+// preload_image("Gallery-20.jpg");
 
 var link = $("nav ul li a");
 //click handler
