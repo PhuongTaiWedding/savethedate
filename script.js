@@ -6,21 +6,7 @@ function preload_image(im_url) {
 preload_image("Anh_bia_3.jpg");
 preload_image("Anh_bia_4.jpg");
 preload_image("Anh_bia_2.jpg");
-// preload_image("Gallery-2.jpg");
-// preload_image("Gallery-3.jpg");
-// preload_image("Gallery-4.jpg");
-// preload_image("Gallery-5.jpg");
-// preload_image("Gallery-9.jpg");
-// preload_image("Gallery-10.jpg");
-// preload_image("Gallery-12.jpg");
-// preload_image("Gallery-13.jpg");
-// preload_image("Gallery-14.jpg");
-// preload_image("Gallery-15.jpg");
-// preload_image("Gallery-16.jpg");
-// preload_image("Gallery-17.jpg");
-// preload_image("Gallery-18.jpg");
-// preload_image("Gallery-19.jpg");
-// preload_image("Gallery-20.jpg");
+
 
 var link = $("nav ul li a");
 //click handler
@@ -375,17 +361,6 @@ form.addEventListener('submit', e => {
  .catch(error => console.error('Vui lòng nhập lại! Xin lỗi vì sự bất tiện này!', error.message))
 })
 
-const form2 = document.forms['register-form2']
-
-form2.addEventListener('submit', e => {
- e.preventDefault()
- fetch(scriptURL, { method: 'POST', body: new FormData(form2)})
- .then(response => alert("Thanks for your response. Can't wait to see you at our special date ♥ ♥ ♥" ))
- .then(() => { window.location.reload(); })
- .catch(error => console.error('Please resubmit! Sorry for the inconvenience!', error.message))
-})
-
-
 
 ///
 
@@ -566,18 +541,3 @@ function reveal2(){
     }
   }
 }
-
-
-$(function() {
-  $( "#language-toggle" ).click(function(){
-    $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
-    $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
-  });
-});
-
-$(function() {
-  $( "#language-toggle2" ).click(function(){
-    $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
-    $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
-  });
-});
