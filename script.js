@@ -68,7 +68,7 @@ function changeText() {
   
 }
 
-setInterval(changeText, 5000);
+setInterval(changeText, 3000);
 
 const textLibrary_2 = [
   'She said Yes',
